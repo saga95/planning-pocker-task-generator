@@ -8,6 +8,10 @@
 .heading {
   text-align: center;
 }
+.slogan{
+  display: flex;
+  justify-content: center;
+}
 .text {
   margin: 5% 10%;
 }

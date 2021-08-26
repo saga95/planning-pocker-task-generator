@@ -59,7 +59,8 @@ function App() {
     <div className="wrapper">
       <div className="app">
         <h1 className="heading">Free Form Tasks Generator🔨</h1>
-        <h2 className="heading">Add your JIRA tickets to Planning Pocker</h2>
+          <h2 className="heading">Add your JIRA tickets to Planning Pocker</h2>
+          <small className="slogan">Just wanted to make scrum life easier 😋</small>
         <div>
           <h3>Steps</h3>
           <ol>
@@ -130,7 +131,9 @@ function App() {
       </div>
       <footer className="footer">
         {`<`}
-        <a className="author" href="http://sagara.me/">sagara 🕶</a>
+        <a className="author" href="http://sagara.me/">
+          sagara 🕶
+        </a>
         {`/>`}
       </footer>
     </div>
