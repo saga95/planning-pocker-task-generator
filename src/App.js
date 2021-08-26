@@ -9,6 +9,8 @@ function App() {
   const [companyId, setCompanyId] = useState();
   const [success, setSuccess] = useState();
 
+  const jiraLink = "https://www.atlassian.com/software/jira";
+  const planningPockerLink = "https://www.planningpoker.com/";
   const onChange = (event) => {
     setFile(event.nativeEvent.target.files[0]);
   };
@@ -42,7 +44,7 @@ function App() {
       Type: ${row[0]} | 
       Reported By ${row[3]} | 
       Status: ${row[5]} | 
-      Priority: ${row[4]}
+      Priority: ${row[4]} |
       Description: ${`${row[6]}`} ||
       `}
           </div>
@@ -59,7 +61,7 @@ function App() {
     <div className="wrapper">
       <div className="app">
         <h1 className="heading">Free Form Tasks Generator🔨</h1>
-          <h2 className="heading">Add your JIRA tickets to Planning Pocker</h2>
+          <h2 className="heading">Add your <a className="link" href={jiraLink}>JIRA</a> tickets to <a className="link" href={planningPockerLink}>Planning Pocker</a></h2>
           <small className="slogan">Just wanted to make scrum life easier 😋</small>
         <div>
           <h3>Steps</h3>
@@ -85,7 +87,7 @@ function App() {
             <div>
               <small>
                 *You can upload it gdrive and convert it or use online
-                converters if you do not have excell. Find my preffered one{" "}
+                converters if you do not have microsoft excel. Find my preffered one{" "}
                 <a href="https://smallpdf.com/blog/convert-xls-to-xlsx">here</a>
               </small>
             </div>
